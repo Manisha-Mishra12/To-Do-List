@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg,rgb(164, 41, 152),rgba(131, 10, 212, 0.943));
+    padding: 10px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.to-do{
+    height: 300px;
+    width: 50%;
+    background-color: white;
+    border-radius: 10px;
+    position:absolute;
+    padding: 30px;
+}
+.to-do h2 {
+   margin-bottom: 15px;
+}
+
+.to-do h2 img{
+    height: 20px;
+    width: 20px;
+   margin-top: 12px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #edeef0;
+    border-radius: 15px;
+    padding-left: 20px;
+    margin-bottom:25px;
+}
+
+input{
+   flex: 1;
+   border: none;
+   outline: none;
+   background: transparent;
+   font-weight: 15px;
+   padding: 15px;
+
+}
+
+button{
+    border: none;
+    outline: none;
+    background:orangered;
+    font-weight: 30px;
+    padding: 15px 40px;
+    cursor: pointer;
+    color:white;
+    border-radius: 100px;
+}
+
+ul li{
+    list-style: none;
+    padding: 8px 5px 8px 40px;
+    user-select: none;
+    cursor: pointer;
+    font-size: 17px;
+    position: relative;
+   
+}
+
+ul li::before{
+    content: '';
+  position: absolute;
+  height:28px;
+  width:28px;
+  border-radius: 50%;
+  background-image: url(../IMAGES/60248-200.png);
+  background-size: cover;
+  background-position: center;
+  top: 5px;
+  left: 9px;
+}
+ .checked{
+    color:#555;
+    text-decoration: line-through;
+    margin-left: 20px;
+}
+
+ .checked::before{
+    background-image: url(../IMAGES/checked.png);
+   background-size: cover;
+   background-position: center;
+  
+   
+}
+ span{
+   position: absolute;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    bottom: 13px;
+    font-size: 22px;
+    color: #070000;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 90px;
+ }
+    
+span:hover{
+    background: #edeef0;
+    cursor: pointer;
+} 
